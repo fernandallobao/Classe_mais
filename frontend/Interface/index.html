@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classe+</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Classe+</h1>
+
+    <p class="intro">
+      Sabemos que privacidade é coisa séria, e queremos ser 100% transparentes com você.<br>
+      Para que o app funcione da melhor forma, precisamos coletar algumas informações.
+    </p>
+
+    <form id="formulario">
+      <label>Nome ou Apelido:
+        <input type="text" name="nome" required>
+      </label>
+
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Matérias preferidas:
+        <input type="text" name="materias_preferidas" required>
+      </label>
+
+      <fieldset>
+        <legend>Matérias com dificuldade:</legend>
+        <label><input type="checkbox" name="dificuldades" value="Matemática"> Matemática</label>
+        <label><input type="checkbox" name="dificuldades" value="Português"> Português</label>
+        <label><input type="checkbox" name="dificuldades" value="História"> História</label>
+        <label><input type="checkbox" name="dificuldades" value="Geografia"> Geografia</label>
+        <label><input type="checkbox" name="dificuldades" value="Ciências"> Ciências</label>
+        <label><input type="checkbox" name="dificuldades" value="Ciências"> Arte</label>
+        <label><input type="checkbox" name="dificuldades" value="Ciências"> Educação Física</label>
+      </fieldset>      
+
+      <label>Como prefere estudar?
+        <select name="preferencia_estudo" required>
+          <option value="sozinho">Sozinho</option>
+          <option value="dupla">Em dupla</option>
+          <option value="grupo">Em grupo</option>
+        </select>
+      </label>
+
+      <label class="consentimento">
+        <input type="checkbox" name="consentimento" required>
+        Concordo com o uso dos meus dados conforme descrito.
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <button id="verDados">Ver Dados Salvos</button>
+
+    <div id="dadosSalvos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
