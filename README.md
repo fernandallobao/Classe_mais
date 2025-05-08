@@ -6,7 +6,8 @@ Este projeto tem como objetivo identificar alunos com facilidade em determinadas
 
 ## 🧠 Tecnologias e Bibliotecas Usadas
 
-- Python 🐍  
+- Python 🐍
+- JavaScript  
 - Pandas  
 - NumPy  
 - Scikit-learn (KMeans, métricas de avaliação)  
